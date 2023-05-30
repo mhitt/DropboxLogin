@@ -10,9 +10,29 @@
   <body>
     <div>
       <div>
-        <nav style="display: flexbox">
-          <div style="border: 1px solid black">
-            <a href="https://dropbox.com/">
+        <nav>
+          <div
+            style="
+              border-bottom: 1px solid lightgray;
+              position: fixed;
+              width: 100%;
+            "
+          >
+            <button style="width: 200px; background: white; border: none">
+              <div style="display: flex">
+                <div style="width: 50px">
+                  <img
+                    src="./dropbox_logo.png"
+                    alt="Dropbox Logo"
+                    style="width: 50px"
+                  />
+                </div>
+                <div style="padding-left: 10px">
+                  <h1>Dropbox</h1>
+                </div>
+              </div>
+            </button>
+            <!-- <a href="https://dropbox.com/">
               <div style="border: 2px solid red; width: fit-content">
                 <img
                   src="./dropbox_logo.png"
@@ -22,28 +42,35 @@
               </div>
 
               <div style="border: 2px solid blue; width: fit-content">
-                <ul>
-                  <li style="display: flex">Dropbox</li>
+                <ul >
+                  <li style="display: inline"><h1>Dropbox</h1></li>
                 </ul>
               </div>
-            </a>
+            </a> -->
           </div>
         </nav>
       </div>
     </div>
-    <div>
-      <div
-        style="min-height: 500px; border: 1px solid orange; text-align: center"
-      >
-      <table>
-        <tr>
-            <td ></td>
-            <td><h1>Log in or sign up</h1></td>
-            <td ></td>
-        </tr>
-        <tr>
-            <div>
-                <button style="height: 50px; width: 300px; background:white; border: 1px solid gray;">
+    <div style="padding-top: 10%; ">
+      <div style="min-height: 500px; text-align: center; margin:auto;  ">
+        <table style="margin:auto;">
+          <tr>
+            <!-- <td></td> -->
+            <td ><h1>Log in or sign up</h1></td>
+            <!-- <td></td> -->
+          </tr>
+          <tr>
+            <!-- <td></td> -->
+            <td>
+              <div>
+                <button
+                  style="
+                    height: 50px;
+                    width: 300px;
+                    background: white;
+                    border: 1px solid gray;
+                  "
+                >
                   <img
                     src="./google logo.png"
                     alt="Google Logo"
@@ -52,33 +79,69 @@
                   Continue with Google
                 </button>
               </div>
-        </tr>
-      </table>
-        <div>
-          
-        </div>
-        <div style="border: 1px solid green">
-          
-          <div>
-            <button style="height: 50px; width: 300px; background:white; border:1px solid gray; display:inline;">
-              <div style="width: fit-content;">
-                <img
-                src="./apple logo.png"
-                alt="Google Logo"
-                style="width: 20px"
-              />
-            </div>
-            <div style="width: fit-content;">
-              Continue with Apple
-            </div>
-            </button>
-          </div>
-          <div>
-            <button style="height: 50px; width: 300px; background:rgb(44, 100, 255); color:white; border-color:rgb(44, 100, 255);">
-              <strong>Continue</strong>
-            </button>
-          </div>
-        </div>
+            </td>
+            <!-- <td></td> -->
+          </tr>
+
+          <tr>
+            <!-- <td></td> -->
+            <td>
+              <div >
+                <div >
+                  <button
+                    style="
+                      height: 50px;
+                      width: 300px;
+                      background: white;
+                      border: 1px solid gray;
+                      display: flex;
+                    "
+                  >
+                    <div style="width: fit-content; ">
+                      <img
+                        src="./apple logo.png"
+                        alt="Google Logo"
+                        style="width: 20px"
+                      />
+                    </div>
+                     <div >Continue with Apple</div> <!--had: style="width: fit-content;" -->
+                  </button>
+                </div>
+                </tr>
+              </div>
+            </td>
+            <!-- <td></td> -->
+          </tr>
+          <tr >
+            <td style="display: flex; height:50px">
+                <hr style="width:100px; height:1px; background:gray;"/><span > or </span><hr style="width:100px; height:1px; background:gray;"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="loginEmail" style="margin-left:0;">Email</label>
+                <input type="email" id="loginEmail" style="width: 250px; height:35px">
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+                <div>
+                    <button
+                      style="
+                        height: 50px;
+                        width: 300px;
+                        background: rgb(44, 100, 255);
+                        color: white;
+                        border-color: rgb(44, 100, 255);
+                      "
+                    >
+                      <strong>Continue</strong>
+                    </button>
+                  </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
@@ -91,7 +154,7 @@
         padding-top: 50px;
       "
     >
-      <table style="border: 2px solid yellow; margin: auto; width: 90%">
+      <table style="margin: auto; width: 90%">
         <tr>
           <td style="width: 20%; padding-left: 20px">Dropbox</td>
           <td style="width: 20%; padding-left: 20px">Products</td>
