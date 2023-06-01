@@ -7,62 +7,47 @@
     <title>Dropbox Login</title> 
   </head>
 
-  <body>
-    <div>
-      <div>
-        <nav>
+  <body >
+        <nav >
           <div
             style="
               border-bottom: 1px solid lightgray;
               position: fixed;
+              top:0;
+              left:0;
               width: 100%;
+              background:white;
+              display:flex;
+              height:55px;
             "
           >
-            <button style="width: 200px; background: white; border: none">
-              <div style="display: flex">
-                <div style="width: 50px">
-                  <img
+            <div style="width: 60px; ">
+                  <a href="https://dropbox.com">
+                    <img
                     src="./dropbox_logo.png"
                     alt="Dropbox Logo"
-                    style="width: 50px"
+                    style="width: 55px; "
                   />
-                </div>
-                <div style="padding-left: 10px">
-                  <h1>Dropbox</h1>
-                </div>
-              </div>
-            </button>
-            <!-- <a href="https://dropbox.com/">
-              <div style="border: 2px solid red; width: fit-content">
-                <img
-                  src="./dropbox_logo.png"
-                  alt="Dropbox Logo"
-                  style="width: 50px"
-                />
-              </div>
-
-              <div style="border: 2px solid blue; width: fit-content">
-                <ul >
-                  <li style="display: inline"><h1>Dropbox</h1></li>
-                </ul>
-              </div>
-            </a> -->
+                  </a> 
+           </div>
+           <div style="margin-top:auto; margin-bottom:auto;">
+                  <span style="font-size: 20px; font-weight:bold">Dropbox</span>
+           </div>
           </div>
         </nav>
-      </div>
-    </div>
     <div style="padding-top: 10%; ">
-      <div style="min-height: 500px; text-align: center; margin:auto;  ">
+      
+      <div style="min-height: 500px;  "> <!--margin:auto; -->
         <table style="margin:auto;">
           <tr>
             <!-- <td></td> -->
-            <td ><h1>Log in or sign up</h1></td>
+            <td ><h1>Log in or sign up</h1></td> <!--  style="margin:auto;" -->
             <!-- <td></td> -->
           </tr>
           <tr>
             <!-- <td></td> -->
             <td>
-              <div>
+              <!-- <div > -->
                 <button
                   style="
                     height: 50px;
@@ -74,11 +59,11 @@
                   <img
                     src="./google logo.png"
                     alt="Google Logo"
-                    style="width: 15px"
+                    style="width: 15px; "
                   />
-                  Continue with Google
+                  <span>Continue with Google</span>
                 </button>
-              </div>
+              <!-- </div> -->
             </td>
             <!-- <td></td> -->
           </tr>
@@ -94,17 +79,16 @@
                       width: 300px;
                       background: white;
                       border: 1px solid gray;
-                      display: flex;
                     "
                   >
-                    <div style="width: fit-content; ">
+                    <!-- <div style="width: fit-content; "> -->
                       <img
                         src="./apple logo.png"
-                        alt="Google Logo"
-                        style="width: 20px"
+                        alt="Apple Logo"
+                        style="width: 20px; height:20px"
                       />
-                    </div>
-                     <div >Continue with Apple</div> <!--had: style="width: fit-content;" -->
+                    <!-- </div> -->
+                    <span>Continue with Apple</span>
                   </button>
                 </div>
                 </tr>
